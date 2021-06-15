@@ -1,0 +1,168 @@
+<html>
+<head>
+<link rel="stylesheet" href="C:\Users\m7\Desktop\website\books/booksh.css"/>
+<style>
+
+
+/* Searchbox */
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+</style>
+</head>
+<body>
+
+<h2><mark>Search Books</mark></h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Type book name here.." title="Type in a name">
+
+<ul id="myUL">
+  <li><a href="C:\Users\m7\Desktop\website\books/TIME MANAJMENT-1.pdf">Time Management</a></li>
+
+  <li><a href="C:\Users\m7\Desktop\website\books/شہیدہ طیبہ واعظی.pdf">شہیدہ طیبہ واعظی</a></li>
+
+  <li><a href="شہیدہ زینب کمائی-1.pdf">شہیدہ زینب کمائی</a></li>
+  <li><a href="#">  </a></li>
+
+  <li><a href="#">  </a></li>
+  <li><a href="#">  </a></li>
+  <li><a href="#">  </a></li>
+</ul>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="view view-first">
+    <a target="_blank" href="C:\Users\m7\Desktop\website\books/time1.jpg">
+    <img src="C:\Users\m7\Desktop\website\books/time1.jpg" width="250"height="250 " />
+    <div class="mask">
+      <h2></h2>
+      <p><br>
+     </p>
+      <a href="C:\Users\m7\Desktop\website\books/TIME MANAJMENT-1.pdf" class="info">Download</a>
+    </div>
+  </div>
+
+
+
+  <div class="view view-second">
+    <a target="_blank" href="C:\Users\m7\Desktop\website\books/taba1.jpg">
+    <img src="C:\Users\m7\Desktop\website\books/taba1.jpg" />
+    <div class="mask"></div>
+    <div class="content">
+      <h2>شہیدہ طیبہ واعظی</h2>
+      <p></p>
+      <a href="C:\Users\m7\Desktop\website\books/شہیدہ طیبہ واعظی.pdf" class="info">Download</a>
+    </div>
+  </div>
+
+
+  <div class="view view-tenth">
+    <a target="_blank" href="C:\Users\m7\Desktop\website\books/zainab1.jpg">
+    <img src="C:\Users\m7\Desktop\website\books/zainab1.jpg" />
+    <div class="mask">
+      <h2>شہیدہ زینب کمائی</h2>
+      <p></p>
+      <a href="شہیدہ زینب کمائی-1.pdf" class="info">Download</a>
+    </div>
+  </div>
+
+  <div class="view view-second">
+    <a target="_blank" href="C:\Users\m7\Desktop\website\books/ibraheem.jpg">
+    <img src="C:\Users\m7\Desktop\website\books/ibraheem.jpg" />
+    <div class="mask"></div>
+    <div class="content">
+      <h2 id="testimonials"></h2>
+      <p></p>
+      <a href="C:\Users\m7\Desktop\website\books/ibraheem.pdf" class="info">Download</a>
+    </div>
+  </div>
+
+
+<div class="view view-second">
+  <a target="_blank" href="C:\Users\m7\Desktop\website\books/aankhen.jpg">
+    <img src="C:\Users\m7\Desktop\website\books/aankhen.jpg" />
+    <div class="mask"></div>
+    <div class="content">
+      <h2 id="testimonials"></h2>
+      <p></p>
+      <a href="C:\Users\m7\Desktop\website\books/shaidayi.pdf" class="info">Download</a>
+    </div>
+  </div>
+
+
+
+
+
+</body>
+</html>
